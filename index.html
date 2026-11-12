@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lalita Narayanan | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fafbfc;
+    color: #202938;
+    line-height: 1.7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 9%;
+    background: white;
+    border-bottom: 1px solid #e8eaf0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav strong {
+    font-size: 19px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #475569;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #5265a8;
+}
+
+section {
+    padding: 85px 12%;
+}
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eyebrow {
+    color: #6477b5;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.15;
+    margin: 20px 0;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    margin-bottom: 8px;
+}
+
+.hero p, .description {
+    color: #647084;
+    max-width: 650px;
+    font-size: 17px;
+}
+
+.accent {
+    color: #6377b5;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 23px;
+    background: #283957;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.button:hover {
+    background: #5265a8;
+}
+
+.light {
+    background: #f0f2f7;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e7eaf0;
+    padding: 25px;
+    margin: 18px 0;
+    border-radius: 10px;
+}
+
+.card p {
+    color: #647084;
+}
+
+.tag {
+    display: inline-block;
+    background: #edf0f8;
+    color: #465987;
+    padding: 4px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 12px 5px 0 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: white;
+    border: 1px solid #e0e4ed;
+    padding: 10px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    color: #758095;
+    background: #f0f2f7;
+}
+
+@media(max-width: 700px) {
+    nav {
+        padding: 18px 5%;
+    }
+
+    nav a {
+        margin-left: 9px;
+        font-size: 11px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <strong>Lalita Narayanan</strong>
+    <div>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="eyebrow">Computer Engineering · AI · Software</div>
+
+    <h1>Hi, I'm <span class="accent">Lalita.</span></h1>
+
+    <p>
+        I'm a Computer Engineering student at Northeastern University
+        interested in building technology at the intersection of
+        software engineering, artificial intelligence, and data-driven
+        problem solving.
+    </p>
+
+    <a class="button" href="#projects">Explore My Work →</a>
+</section>
+
+<section id="about" class="light">
+    <div class="eyebrow">A little about me</div>
+    <h2>About Me</h2>
+
+    <p class="description">
+        I am a Computer Engineering student with a minor in Computer
+        Science at Northeastern University. My interests span
+        artificial intelligence, machine learning, software systems,
+        and quantitative modeling.
+
+        I enjoy translating complex problems into practical
+        technological solutions, particularly in healthcare,
+        engineering, and data-driven applications.
+    </p>
+</section>
+
+<section id="experience">
+    <div class="eyebrow">Where I've worked</div>
+    <h2>Experience</h2>
+
+    <div class="card">
+        <h3>DNV</h3>
+        <p>Software Engineering / Digital & AI</p>
+        <p>
+            Developed a Python-based solar and battery proposal
+            generation tool, streamlining a process from approximately
+            14 days to as little as 10 minutes.
+        </p>
+        <span class="tag">Python</span>
+        <span class="tag">Automation</span>
+        <span class="tag">AI</span>
+    </div>
+
+    <div class="card">
+        <h3>Autonomize AI</h3>
+        <p>AI / Machine Learning</p>
+        <p>
+            Worked with natural language processing and generative AI
+            models for healthcare and clinical workflow applications.
+        </p>
+        <span class="tag">NLP</span>
+        <span class="tag">Generative AI</span>
+        <span class="tag">LLMs</span>
+    </div>
+
+    <div class="card">
+        <h3>Pfizer</h3>
+        <p>Internship Experience</p>
+        <p>
+            Explored the intersection of technology and pharmaceutical
+            drug development.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>CureMatch</h3>
+        <p>Computational Oncology</p>
+        <p>
+            Explored EGFR protein mutations and drug interactions
+            to support personalized cancer treatment approaches.
+        </p>
+        <span class="tag">Computational Biology</span>
+        <span class="tag">Data Analysis</span>
+    </div>
+</section>
+
+<section id="projects" class="light">
+    <div class="eyebrow">Things I've built</div>
+    <h2>Selected Projects</h2>
+
+    <div class="card">
+        <h3>Solar & Battery Proposal Generator</h3>
+        <p>
+            Developed a Python automation tool that generates
+            customized solar and battery project proposals using
+            historical project data and client requirements.
+        </p>
+        <span class="tag">Python</span>
+        <span class="tag">Automation</span>
+        <span class="tag">Data Processing</span>
+    </div>
+
+    <div class="card">
+        <h3>Healthcare AI & NLP</h3>
+        <p>
+            Evaluated language models for healthcare documentation,
+            policy interpretation, information extraction,
+            and decision-support workflows.
+        </p>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">NLP</span>
+        <span class="tag">LLMs</span>
+    </div>
+
+    <div class="card">
+        <h3>Quantitative Volatility Research</h3>
+        <p>
+            Investigating how underlying asset volatility influences
+            the pricing of binary prediction market contracts
+            through mathematical modeling and sensitivity analysis.
+        </p>
+        <span class="tag">Quantitative Research</span>
+        <span class="tag">Python</span>
+        <span class="tag">Modeling</span>
+    </div>
+
+</section>
+
+<section id="skills">
+    <div class="eyebrow">My technical toolkit</div>
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+        <span>Python</span>
+        <span>Java</span>
+        <span>C++</span>
+        <span>SQL</span>
+        <span>PyTorch</span>
+        <span>Machine Learning</span>
+        <span>Generative AI</span>
+        <span>NLP</span>
+        <span>Data Analysis</span>
+        <span>Git</span>
+    </div>
+</section>
+
+<section id="contact" class="light">
+    <div class="eyebrow">Get in touch</div>
+    <h2>Let's Connect.</h2>
+
+    <p class="description">
+        I'm always interested in connecting with people working
+        in software engineering, AI, technology, and research.
+    </p>
+
+    <p style="margin-top:20px;">
+        Email: YOUR_EMAIL_HERE
+    </p>
+
+    <p>
+        <a href="https://www.linkedin.com/"
+           target="_blank">LinkedIn</a>
+        &nbsp; | &nbsp;
+        <a href="https://github.com/lalita1809"
+           target="_blank">GitHub</a>
+    </p>
+</section>
+
+<footer>
+    © 2026 Lalita Narayanan · Built with HTML & CSS
+</footer>
+
+</body>
+</html>
